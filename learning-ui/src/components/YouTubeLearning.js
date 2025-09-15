@@ -51,7 +51,7 @@ const YouTubeLearning = () => {
 
     try {
       // First, get playlist items
-      const playlistResponse = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&maxResults=50&playlistId=${playlistId}&key=AIzaSyCMNrYa-BKiDwczZh99fMZEu9C4Hbxm9D4`);
+      const playlistResponse = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&maxResults=50&playlistId=${playlistId}&key=OPEN_AI_API`);
       const playlistData = await playlistResponse.json();
 
       if (playlistData.error) {
@@ -687,5 +687,6 @@ const YouTubeLearning = () => {
     </Layout>
   );
 };
+
 
 export default YouTubeLearning; 
